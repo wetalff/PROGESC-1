@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Ejercicio5" />
+        <module name="Ejercicio6" />
+        <module name="Ejercicio7" />
+        <module name="Ejercicio20" />
+        <module name="Ejercicio8" />
+        <module name="Ejercicio1" />
+        <module name="Ejercicio2" />
+        <module name="Ejercicio3" />
+        <module name="practicaSalario2" />
+        <module name="Ejercicio4" />
+        <module name="Ejercicio9" />
+        <module name="Ejericicio18" />
+        <module name="practicaSalario" />
+        <module name="Ejercicio19" />
+        <module name="ejemplo2" />
+        <module name="Ejercicio15" />
+        <module name="PracticaS2" />
+        <module name="Ejercicio14" />
+        <module name="Ejercicio17" />
+        <module name="Ejercicio16" />
+        <module name="Ejercicio11" />
+        <module name="Ejercicio10" />
+        <module name="Ejercicio13" />
+        <module name="Ejercicio12" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

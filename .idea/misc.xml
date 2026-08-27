@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ejemplo2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio1/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio3/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio4/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio5/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio6/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio7/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio8/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio9/pom.xml" />
+        <option value="$PROJECT_DIR$/PracticaS2/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio10/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio11/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio12/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio13/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio14/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio15/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio16/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio17/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio19/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejercicio20/pom.xml" />
+        <option value="$PROJECT_DIR$/Ejericicio18/pom.xml" />
+        <option value="$PROJECT_DIR$/practicaSalario/pom.xml" />
+        <option value="$PROJECT_DIR$/practicaSalario2/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

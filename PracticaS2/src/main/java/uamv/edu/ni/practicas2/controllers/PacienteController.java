@@ -1,8 +1,11 @@
-package uamv.edu.ni.practicas2;
+package uamv.edu.ni.practicas2.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import uamv.edu.ni.practicas2.Paciente;
+import uamv.edu.ni.practicas2.PacienteDAO;
+
+import java.time.LocalDate;
 
 public class PacienteController {
     PacienteDAO pacientes = new PacienteDAO();
@@ -13,7 +16,10 @@ public class PacienteController {
     private TextField txtApellidos;
     @FXML
     private Label lblContador;
-
+    @FXML
+    private DatePicker dpFechaNac;
+    @FXML
+    CheckBox cbTieneSeguro;
 
     @FXML
     protected void agregarButtonOnClick(){
@@ -27,16 +33,19 @@ public class PacienteController {
     private void leerDatos(){
         String nombres = txtNombres.getText();
         String apellidos = txtApellidos.getText();
-        agregarPaciente(new Paciente(nombres, apellidos));
+        agregarPaciente(new Paciente(nombres, apellidos, dpFechaNac.getValue(), cbTieneSeguro.isSelected()));
+        LocalDate fechaNacimiento = dpFechaNac.getValue();
+        boolean tieneSeguro = this.cbTieneSeguro.isSelected();
+        agregarPaciente(new Paciente(nombres, apellidos, fechaNacimiento, tieneSeguro));
 
     }
 
     private void agregarPaciente(Paciente paciente){
-        pacientes.agregarPaciente(paciente);
+        pacientes.agregar(paciente);
     }
 
     private void cantidadPaciente(){
-        lblContador.setText("Registros Almacenados: " + pacientes.listarPacientes().size());
+        lblContador.setText("Registros Almacenados: " + pacientes.obtenerDatos().size());
     }
 
     private void limpiarCampos(){

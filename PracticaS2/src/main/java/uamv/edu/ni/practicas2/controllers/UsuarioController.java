@@ -1,4 +1,4 @@
-package uamv.edu.ni.practicas2;
+package uamv.edu.ni.practicas2.controllers;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,8 +8,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import uamv.edu.ni.practicas2.PasswordDAO;
+import uamv.edu.ni.practicas2.Usuario;
 
 public class UsuarioController {
 

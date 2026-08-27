@@ -1,4 +1,4 @@
-package uamv.edu.ni.practicas2;
+package uamv.edu.ni.practicas2.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
