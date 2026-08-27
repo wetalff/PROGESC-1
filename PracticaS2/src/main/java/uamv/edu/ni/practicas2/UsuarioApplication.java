@@ -6,7 +6,6 @@ import javafx.stage.Stage;
 import javafx.application.Application;
 
 
-
 public class UsuarioApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception{

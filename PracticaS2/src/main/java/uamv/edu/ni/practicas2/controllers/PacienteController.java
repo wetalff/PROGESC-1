@@ -9,9 +9,12 @@ import java.time.LocalDate;
 
 public class PacienteController {
     PacienteDAO pacientes = new PacienteDAO();
+    public void initialize(){agrupar();}
 
     @FXML
     private TextField txtNombres;
+    @FXML
+    private ListView<String> lvlist;
     @FXML
     private TextField txtApellidos;
     @FXML
@@ -20,23 +23,40 @@ public class PacienteController {
     private DatePicker dpFechaNac;
     @FXML
     CheckBox cbTieneSeguro;
+    @FXML
+    RadioButton rdMasculino;
+    @FXML
+    RadioButton rdFemenino;
+    @FXML
+    RadioButton rdDuran;
+
+    ToggleGroup agrupado = new ToggleGroup();
+
+    private void agrupar(){
+        rdDuran.setToggleGroup(agrupado);
+        rdFemenino.setToggleGroup(agrupado);
+        rdMasculino.setToggleGroup(agrupado);
+    }
+
+
 
     @FXML
     protected void agregarButtonOnClick(){
-        leerDatos();
+        obtenerDatos();
         limpiarCampos();
         cantidadPaciente();
 
 
     }
 
-    private void leerDatos(){
+    private void obtenerDatos(){
         String nombres = txtNombres.getText();
         String apellidos = txtApellidos.getText();
-        agregarPaciente(new Paciente(nombres, apellidos, dpFechaNac.getValue(), cbTieneSeguro.isSelected()));
         LocalDate fechaNacimiento = dpFechaNac.getValue();
         boolean tieneSeguro = this.cbTieneSeguro.isSelected();
         agregarPaciente(new Paciente(nombres, apellidos, fechaNacimiento, tieneSeguro));
+        lvlist.getItems().add(txtNombres.getText());
+
 
     }
 

@@ -30,16 +30,20 @@ public class UsuarioController {
     @FXML
     protected void agregarButtonOnClick() throws IOException {
         leerDatos();
-        limpiarCampos();
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/uamv/edu/ni/practicas2/paciente-viex.fxml")
-        );
+        if(verificacion()) {
 
-        Parent root = loader.load();
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource("/uamv/edu/ni/practicas2/paciente-viex.fxml")
+            );
 
-        Stage stage = (Stage) btnAcceder.getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.show();
+            Parent root = loader.load();
+
+            Stage stage = (Stage) btnAcceder.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+        else{limpiarCampos();}
+
 
     }
 
@@ -58,6 +62,14 @@ public class UsuarioController {
     private void limpiarCampos(){
         txtusuario.setText("");
         txtpassword.setText("");
+
+    }
+
+    private boolean verificacion(){
+        String usuario = txtusuario.getText();
+        String password = txtpassword.getText();
+        return usuario.equals("Admin1234") && password.equals("1234");
+
 
     }
 
